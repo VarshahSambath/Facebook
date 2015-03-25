@@ -24,6 +24,9 @@
 .mLeft1{
 	margin-left:1%;
 }
+.mLeft5{
+	margin-left: 5px;
+}
 
 .ralign0, .mRight0 {
 	margin-right: 0px;
@@ -85,6 +88,20 @@
 	float: right;
 }
 
+/*.............Padding...................*/
+
+
+.pRight0{
+	padding-right:0px;
+}
+.pLeft0{
+	padding-left:0px;
+}
+
+
+
+
+
 
 
 
@@ -94,7 +111,7 @@
 
 
 .bluecolor {
-	background-color: #4682B4;
+	background-color: #3A5795; //#4682B4;
 }
 
 .bluecolor1 {
@@ -130,7 +147,6 @@
 
 
 /*........height& width ...........*/
-
 
 
 
@@ -186,6 +202,13 @@
 	font-size:12px;
 }
 
+.font14{
+	font-size:14px;
+}
+.font16{
+	font-size:16px;
+}
+
 
 
 
@@ -210,13 +233,15 @@
 
 
 .btnStyle, .btnStyle2 {
-	background-color: #4682B4;
+	background-color:#3A5795; //#4682B4;
 	border-radius: 0;
+	color: #fff;
 }
 
 .btnStyle:hover {
-	background-color: #0198E1;
+	background-color:#003399;
 	color: #fff;
+	
 }
 
 .buttonStyle > ul > li{
@@ -279,6 +304,7 @@
 .frndName {
 	font-weight: bold;
 	color: blue;
+	font-size:12px;
 }
 
 .frndName:hover {
@@ -293,15 +319,17 @@
 }
 
 #leftColumn {
-	padding-left: 8px;
+	padding-left:8px;
+		
 	//padding-top: 13px;
 	position: relative;
 	float: left;
 	word-wrap: break-word;
 	height: auto;
-	margin-left:0px;
+	margin-left:30px;
 	font-size:12px;
 	min-width:180px;
+	
 }
 .minWidth{
 	min-width:1200px;
@@ -367,7 +395,13 @@ body {
  
 }
 .postBottom{
-	background-color: #F6F7F8;height:40px; 
+	background-color: #F6F7F8;height:auto; 
+}
+.postdropdown{
+	height:25px;line-height:5px;margin-top:3px;
+}
+.postbutton{
+	height:22px;line-height:5px;margin-top:4px;
 }
 .bottomBar{
 
@@ -602,9 +636,10 @@ width: 17px;
 	margin-top:320px; 
 	margin-left:0px;
 	
+	
 }
 .bottomaTag > a{
-	color:#141823 ;
+	color:#909090;
 	font:10px;
 	
 }
@@ -612,7 +647,7 @@ width: 17px;
 .nav1 > li > a {
   position: relative;
   display: block;
-  padding: 5px 10px;
+  padding: 3px 5px;
 }
 
 .m0p0{
