@@ -10,9 +10,9 @@
 <link rel="stylesheet" href="css/myStyles.css">
 <!-- <link rel="stylesheet" href="css/bootstrap-theme.min.css"> -->
 
-<script
-	src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
+<script src="js/myScripts.js"></script>
 </head>
 <body>
 	<nav class="navbar  navbar-fixed-top ">
@@ -163,7 +163,7 @@
 					aria-expanded="true"></span>
 				<ul
 					class="dropdown-menu dropdown-menu-left mTop10 pull-right dropdown-menu-fixed-width scrollable-menu"
-					role="menu" aria-labelledby="dropdownMenu1">
+					role="menu" aria-labelledby="dropdownMenu1" id="notifUl">
 					<div>
 						<strong class="stlylingDiv">Notifications </strong> <a
 							class="mLeft20">Mark as read</a><a class="mLeft5"> Settings</a>
@@ -172,27 +172,29 @@
 					<li role="presentation" class="divider"></li>
 					<li role="presentation"><a role="menuitem" tabindex="-1"
 						href="#"><span class="mRight20" aria-hidden="true"><img
-								src="images/images.jpeg" width="25%" /><strong>Swopna
-							</strong> shared<strong>Sandy </strong>'s post <img
-								src="images/images3.jpeg" width="20%" /></span></a></li>
+								src="images/images8.jpeg" /><span><strong> Elena
+							</strong> shared<strong> Sandy Williams</strong>'s post </span>
+							<img
+								src="images/images3.jpeg" /></span>
+							</a></li>
 					<li role="presentation" class="divider"></li>
 					<li role="presentation"><a role="menuitem" tabindex="-1"
 						href="#"><span class="  mRight20" aria-hidden="true"><img
-								src="images/images.jpeg" width="25%" /><strong>Swopna
-							</strong> shared<strong>Sandy </strong>'s post <img
-								src="images/images3.jpeg" width="20%" /></span></a></li>
+								src="images/images9.jpeg" /><strong>Swopna
+							</strong> shared<strong>Sandy Williams</strong>'s post<img
+								src="images/images3.jpeg" /></span></a></li>
 					<li role="presentation" class="divider"></li>
 					<li role="presentation"><a role="menuitem" tabindex="-1"
 						href="#"><span class="  mRight20" aria-hidden="true"><img
-								src="images/images.jpeg" width="25%" /><strong>Swopna
-							</strong> shared<strong>Sandy </strong>'s post <img
-								src="images/images3.jpeg" width="20%" /></span></a></li>
+								src="images/images6.jpeg" /><strong>Damon Roe
+							</strong> changed his profile pic <img
+								src="images/images6.jpeg"  /></span></a></li>
 					<li role="presentation" class="divider"></li>
 					<li role="presentation"><a role="menuitem" tabindex="-1"
 						href="#"><span class="  mRight20" aria-hidden="true"><img
-								src="images/images.jpeg" width="25%" /><strong>Swopna
-							</strong> shared<strong>Sandy </strong>'s post <img
-								src="images/images3.jpeg" width="20%" /></span></a></li>
+								src="images/images.jpeg" /><strong>Swopna
+							</strong> shared a link "Life is a celebration!!"
+								</span></a></li>
 
 
 				</ul>
@@ -289,19 +291,15 @@
 
 		<div id="leftColumn" class="col-xs-2 col-md-2 col-lg-2">
 			<div>
-				<img src="images/ppic.png" width="50px"  class="floatLeft"/> <a class="font12 blackFont"><strong>Varshah Sambath</strong></a>
+				<img src="images/ppic.png" width="50px"  class="floatLeft mRight5"/> <a class="font12 blackFont "><strong class="mTop5">Varshah Sambath</strong></a>
 				<br>
 				<a>Edit</a>
 			</div>
 			<ul class="nav nav-pills nav-stacked mTop50 nav1" role="tablist">
-				<!-- <li><a href="#"> <span
-						class="glyphicon glyphicon-envelope "></span><Strong
-						class="blackFont mLeft5">Newsfeed</Strong> <span
-						class="caret floatRight"></span></a></li>-->
-						<li><a href="#"> <span
+				<li><a href="#"> <span
 						class="iconImage2 nwfeeds"></span><Strong
 						class="blackFont mLeft5">Newsfeed</Strong> <span
-						class="caret floatRight"></span></a></li>
+						class="caret floatRight mTop10" ></span></a></li>
 				<li><a href="#"><span class="glyphicon glyphicon-gift"></span><span
 						class="blackFont mLeft5">Games</span> <span class=" floatRight">4+</span></a></li>
 				<li><a href="#"> <span class="iconImage2 eventss"></span><span
@@ -395,27 +393,26 @@
 					<span class="glyphicon glyphicon-book font10"></span>
 					<Strong class="font12">Create Album</Strong>
 				</div>
-				<textarea  class="ashFont col-xs-12 col-md-12 col-lg-12 ">What's on your mind?</textarea>
+				<textarea  class="ashFont col-xs-12 col-md-12 col-lg-12 " id="postBottomBar" >What's on your mind?</textarea>
 				
 				</div>
 		
 				
 			</div>
 			
-			<div class="col-xs-12 col-md-12 col-lg-12 dispInLine postBottom">
+			<div class="col-xs-12 col-md-12 col-lg-12 dispInLine postBottom " id="show1" style="display:none;">
 			
 				<div class="iconImage1 camera  "></div>
 				<div class="iconImage1 user   " ></div>
 				<div class="iconImage1 smiley   "></div>
 				<div class="iconImage1 location   " ></div>
-				<div class="btn floatRight" id="btnPost" role="group" aria-label="..." >
-
-						<div class="btn-group  " role="group">
+				<div class="btn floatRight" id="btnPost" role="group" aria-label="..."  >
+					<div class="btn-group  " role="group">
 							<button type="button" class="btn btn-default dropdown-toggle  postdropdown"
 								data-toggle="dropdown" aria-expanded="false">
-								<span class="glyphicon glyphicon-globe mTop0"></span>
+								<span class="glyphicon glyphicon-globe mTop1"></span>
 								Public 
-								<span class="caret"></span>
+								<span class="caret" style="padding-top:0px;"></span>
 							</button>
 							<ul class="dropdown-menu" role="menu">
 								<div class="stlylingDiv mTop0">Who should see this ?</div>
@@ -428,11 +425,10 @@
                    
 								
 							</ul>
-						</div>
-						<button type="button" class="btn  btnStyle2 mLeft1 whitefont postbutton">Post</button>
 					</div>
-
-
+					<button type="button" class="btn  btnStyle2 mLeft1 whitefont postbutton">Post</button>
+				</div>
+				
 			</div>
 <!--  for the posts -->
 			<div class="col-xs-12 col-md-12 col-lg-12 individualsection mTop10">
@@ -495,7 +491,10 @@
 			<li class="dividerLine mTop10"><Strong class="ashFont ">Trending</Strong></li>
 			<br>
 			<li >
-			<a ><span class="glyphicon glyphicon-share-alt"></span>Microsoft:</a> Microsoft launches Office 2016 preview and skype for business test version.</li>
+				<a >
+				<span class="glyphicon glyphicon-share-alt"></span>Microsoft:</a> 
+					Microsoft launches Office 2016 preview and skype for business test version.
+			</li>
 			<br>
 			<li><a> <span class="glyphicon glyphicon-share-alt"></span>Himalayas:</a> Scientists say hair samples found in mountain range belong to extinct bear.</li>
 			<br>
@@ -576,22 +575,19 @@
 			</div>
 			<div class="dividerLine mTop10 col-xs-12 col-md-12 col-lg-12 pTop5" id="rightMostScrollerDiv">
 				
-					<div  class="chatfrnds height45"><img src="images/images6.jpeg"
-							class=" floatLeft imgSize2 font10 mLeft0 mRight5" />
+					<div  class="chatfrnds height45"><img src="images/images6.jpeg" class=" floatLeft imgSize2 font10 mLeft0 mRight5" />
 							<a href="#" class="blackFont ">
 								<span class="font10 ">Alaric Saltzman</span>
 								<span class="pull-right font10 dispInline mTop4 ashFont pRight0">2 hr</span>
 							</a>
 					</div>
-					<div  class="chatfrnds height45"><img src="images/images.jpeg"
-							class=" floatLeft imgSize2 font10 mLeft0 mRight5" />
+					<div  class="chatfrnds height45"><img src="images/images.jpeg" class=" floatLeft imgSize2 font10 mLeft0 mRight5" />
 							<a href="#" class="blackFont ">
 								<span class="font10 ">Enzo</span>
 								<span class="pull-right font10 dispInline mTop4 greenColor" >web<p class="glyphicon glyphicon-cd "></p></span>
 							</a>
 					</div>
-					<div class="chatfrnds height45"><img src="images/images8.jpeg"
-							class=" floatLeft imgSize2 font10 mLeft0 mRight5" />
+					<div class="chatfrnds height45"><img src="images/images8.jpeg" class=" floatLeft imgSize2 font10 mLeft0 mRight5" />
 							<a href="#" class="blackFont ">
 								<span class="font10 ">Caroline </span>
 								<span class="pull-right font10 dispInline mTop4 greenColor " >mobile<p class="glyphicon glyphicon-phone "></p></span>
