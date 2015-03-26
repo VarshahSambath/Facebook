@@ -315,8 +315,7 @@
 }
 
 .scrollable-menu {
-	height: auto;
-	max-height: 200px;
+	height: 200px;;
 	overflow-x: hidden;
 	
 }
@@ -464,6 +463,9 @@ margin-top:10px;
 	width:50px;
 	height:50px;
 }
+#notifUl li {
+	height:55 px;
+}
 #notifUl li{
 	font-size:12px;
 }
@@ -500,6 +502,7 @@ margin-top:10px;
 	padding-left:0px;
 	margin-top:2px;
 	padding-top:0px;
+	overflow:hidden;
 	
 }
 #forthCol{ 
@@ -713,5 +716,8 @@ width: 17px;
 	border:1px solid #E0E0E0;
 	margin-right:10px; 
 	 margin-top:-15px; 
+}
+#showPostBottomBar{
+	display:none;
 }
 

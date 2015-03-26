@@ -12,7 +12,7 @@
 
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 <script src="js/bootstrap.min.js"></script>
-<script src="js/myScripts.js"></script>
+<script src="js/myScript.js"></script>
 </head>
 <body>
 	<nav class="navbar  navbar-fixed-top ">
@@ -157,7 +157,7 @@
 				</ul>
 			</div>
 			<!-- for the notification-->
-			<div class="buttonStyle iconStyle mTop5 mLeft20  ">
+			<div class="buttonStyle iconStyle mTop5 mLeft20 ">
 				<span class=" glyphicon glyphicon-globe dropdown-toggle"
 					aria-hidden="true" id="dropdownMenu2" data-toggle="dropdown"
 					aria-expanded="true"></span>
@@ -170,31 +170,37 @@
 
 					</div>
 					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1"
-						href="#"><span class="mRight20" aria-hidden="true"><img
-								src="images/images8.jpeg" /><span><strong> Elena
-							</strong> shared<strong> Sandy Williams</strong>'s post </span>
-							<img
-								src="images/images3.jpeg" /></span>
-							</a></li>
-					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1"
-						href="#"><span class="  mRight20" aria-hidden="true"><img
-								src="images/images9.jpeg" /><strong>Swopna
-							</strong> shared<strong>Sandy Williams</strong>'s post<img
-								src="images/images3.jpeg" /></span></a></li>
-					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1"
-						href="#"><span class="  mRight20" aria-hidden="true"><img
-								src="images/images6.jpeg" /><strong>Damon Roe
-							</strong> changed his profile pic <img
-								src="images/images6.jpeg"  /></span></a></li>
-					<li role="presentation" class="divider"></li>
-					<li role="presentation"><a role="menuitem" tabindex="-1"
-						href="#"><span class="  mRight20" aria-hidden="true"><img
-								src="images/images.jpeg" /><strong>Swopna
-							</strong> shared a link "Life is a celebration!!"
-								</span></a></li>
+					
+				<li role="presentation" style="height:55px;"><a role="menuitem" tabindex="-1"
+						href="#"><div>
+				<img src="images/images12.jpeg" width="50px"  class="floatLeft mRight5"/>
+				<img src="images/images4.jpeg" width="50px"  class="floatRight mRight5"/> <span class="font12 blackFont "><strong>Eric</strong> liked your post </span>
+				<br>
+				<a class="font10 ashFont">2hrs ago</a>
+			</div></a></li>
+					<li role="presentation" style="height:55px;"><a role="menuitem" tabindex="-1"
+						href="#"><div>
+				<img src="images/ppic.png" width="50px"  class="floatLeft mRight5"/>
+				<img src="images/ppic.png" width="50px"  class="floatRight mRight5"/> <a class="font12 blackFont "><strong>Leena</strong> changed her profile pic </a>
+				<br>
+				<a class="font10 ashFont">2hrs ago</a>
+			</div></a></li>
+				
+					
+				<li role="presentation" style="height:55px;"><a role="menuitem" tabindex="-1"
+						href="#"><div>
+				<img src="images/images7.jpeg" width="50px"  class="floatLeft mRight5"/>
+				<img src="images/images3.jpeg" width="50px"  class="floatRight mRight5"/> <a class="font12 blackFont "><strong>Varshah </strong> shared Life and Challenges's post</a>
+				<br>
+				<a class="font10 ashFont">2hrs ago</a>
+			</div></a></li>
+			<li role="presentation" style="height:55px;"><a role="menuitem" tabindex="-1"
+						href="#"><div>
+				<img src="images/images8.jpeg" width="50px"  class="floatLeft mRight5"/>
+				<img src="images/images3.jpeg" width="50px"  class="floatRight mRight5"/> <a class="font12 blackFont "><strong>Elena </strong> shared Life and Challenges's post</a>
+				<br>
+				<a class="font10 ashFont">2hrs ago</a>
+			</div></a></li>
 
 
 				</ul>
@@ -393,14 +399,14 @@
 					<span class="glyphicon glyphicon-book font10"></span>
 					<Strong class="font12">Create Album</Strong>
 				</div>
-				<textarea  class="ashFont col-xs-12 col-md-12 col-lg-12 " id="postBottomBar" >What's on your mind?</textarea>
+				<textarea  class="ashFont col-xs-12 col-md-12 col-lg-12 " id="postTextArea" >What's on your mind?</textarea>
 				
 				</div>
 		
 				
 			</div>
 			
-			<div class="col-xs-12 col-md-12 col-lg-12 dispInLine postBottom " id="show1" style="display:none;">
+			<div class="col-xs-12 col-md-12 col-lg-12 dispInLine postBottom " id="showPostBottomBar" >
 			
 				<div class="iconImage1 camera  "></div>
 				<div class="iconImage1 user   " ></div>
@@ -412,7 +418,7 @@
 								data-toggle="dropdown" aria-expanded="false">
 								<span class="glyphicon glyphicon-globe mTop1"></span>
 								Public 
-								<span class="caret" style="padding-top:0px;"></span>
+								<span class="caret"></span>
 							</button>
 							<ul class="dropdown-menu" role="menu">
 								<div class="stlylingDiv mTop0">Who should see this ?</div>
@@ -435,7 +441,7 @@
 				<div>
 					<img src="images/images6.jpeg"
 						class="floatLeft imgSize" /><a>Stefan Salvatore </a> <br> <a
-						class="ashFont">2 mins ago</a>
+						class="ashFont">25 mins ago</a>
 				</div>
 				<div>
 					<img src="images/images4.jpeg" class="imagedimension" />
