@@ -62,7 +62,7 @@
 }
 
 .mTop10 {
-	margin-top: 12px;
+	margin-top: 10px;
 }
 .mTop0{
 	margin-top:0px;
@@ -259,7 +259,7 @@
 
 
 .btnStyle, .btnStyle2 {
-	background-color:#3A5795; //#4682B4;
+	background-color:#3A5795; 
 	border-radius: 0;
 	color: #fff;
 }
@@ -274,7 +274,7 @@
 	margin-left:2%;
 }
 .dropdown-menu>li>.menuitem1:hover {
-	background-color: #0198E1;
+	background-color: #3A57A1;
 	color: #fff;
 }
 
@@ -315,8 +315,7 @@
 }
 
 .scrollable-menu {
-	height: auto;
-	max-height: 200px;
+	height: 200px;;
 	overflow-x: hidden;
 	
 }
@@ -429,7 +428,10 @@ margin-top:10px;
 	background-color: #F6F7F8;height:auto; 
 }
 .postdropdown{
-	height:25px;line-height:5px;margin-top:3px;
+	height:25px;
+	line-height:5px;
+	margin-top:3px;
+	padding-top:0px;
 }
 .postbutton{
 	height:22px;line-height:5px;margin-top:4px;
@@ -456,6 +458,16 @@ margin-top:10px;
 
 #newCalss:hover{
 	background-color:lime;
+}
+#notifUl  li span  img{
+	width:50px;
+	height:50px;
+}
+#notifUl li {
+	height:55 px;
+}
+#notifUl li{
+	font-size:12px;
 }
 #thirdColumnUl{
 	margin-top: 20px;
@@ -490,6 +502,7 @@ margin-top:10px;
 	padding-left:0px;
 	margin-top:2px;
 	padding-top:0px;
+	overflow:hidden;
 	
 }
 #forthCol{ 
@@ -703,5 +716,8 @@ width: 17px;
 	border:1px solid #E0E0E0;
 	margin-right:10px; 
 	 margin-top:-15px; 
+}
+#showPostBottomBar{
+	display:none;
 }
 
